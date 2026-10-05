@@ -643,6 +643,20 @@ a {
   justify-self: center;
 }
 
+/* Additional LionIQ social creatives */
+
+.creative-output-card--social {
+  width: 88%;
+}
+
+.creative-output-card--social-left {
+  justify-self: start;
+}
+
+.creative-output-card--social-right {
+  justify-self: center;
+}
+
 
 /* ----------------------------------------------------------
    VIDEO BUTTON
@@ -782,6 +796,18 @@ a {
 ========================================================== */
 
 @media (max-width: 620px) {
+
+  .creative-output-card--social {
+  width: 82%;
+}
+
+.creative-output-card--social-left {
+  justify-self: start;
+}
+
+.creative-output-card--social-right {
+  justify-self: end;
+}
 
   .selected-work {
     padding: 32px 0 72px;
