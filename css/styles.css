@@ -2874,11 +2874,17 @@ body.video-modal-open {
     font-size: 16px;
   }
 
-  .contact-portrait {
-    width: 360px;
+  
+    .contact-portrait {
+    width: min(310px, 92vw);
 
-    right: -125px;
+    right: -12px;
     bottom: 0;
+  }
+
+  .contact-portrait img {
+    width: 100%;
+    height: auto;
   }
 
   .contact-signature {
