@@ -107,6 +107,10 @@ a {
 
 /* Navigation */
 
+.hero__menu-toggle {
+  display: none;
+}
+
 .hero__nav {
   display: flex;
   gap: 44px;
@@ -334,6 +338,95 @@ a {
 
   .hero__nav a::after {
     bottom: 10px;
+  }
+
+  .hero__header--menu-ready {
+    z-index: 2;
+  }
+
+  .hero__header--menu-ready .hero__menu-toggle {
+    position: absolute;
+    top: 26px;
+    right: 0;
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+  }
+
+  .hero__menu-toggle:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+
+  .hero__menu-toggle span {
+    position: absolute;
+    top: 21px;
+    left: 12px;
+    width: 20px;
+    height: 1px;
+    background: currentColor;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .hero__menu-toggle span:first-child {
+    transform: translateY(-6px);
+  }
+
+  .hero__menu-toggle span:last-child {
+    transform: translateY(6px);
+  }
+
+  .hero__menu-toggle[aria-expanded="true"] span:first-child {
+    transform: rotate(45deg);
+  }
+
+  .hero__menu-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hero__menu-toggle[aria-expanded="true"] span:last-child {
+    transform: rotate(-45deg);
+  }
+
+  /* Keep the closed row's footprint so the brand and hero never shift. */
+  .hero__header--menu-ready .hero__nav {
+    visibility: hidden;
+  }
+
+  .hero__header--menu-ready.is-menu-open {
+    min-height: var(--menu-header-height);
+  }
+
+  .hero__header--menu-ready.is-menu-open .brand {
+    width: var(--menu-brand-width);
+  }
+
+  .hero__header--menu-ready.is-menu-open .hero__nav {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    visibility: visible;
+    flex-direction: column;
+    gap: 0;
+    width: min(180px, calc(100vw - 32px));
+    padding: 8px;
+    border: 1px solid rgba(17, 16, 15, 0.15);
+    border-radius: 10px;
+    background: var(--ivory);
+    box-shadow: 0 8px 24px rgba(17, 16, 15, 0.08);
+  }
+
+  .hero__header--menu-ready.is-menu-open .hero__nav a {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 10px 12px;
+    margin: 0;
   }
 
   .hero__shape {
@@ -1205,6 +1298,8 @@ a {
   }
 
   .project__visual--elan {
+    /* Reserve the lazy image's existing width before anchor scrolling. */
+    width: 100%;
     justify-self: start;
     max-width: 560px;
   }
@@ -3036,6 +3131,7 @@ body.video-modal-open {
     scroll-behavior: auto;
   }
 
+  .hero__menu-toggle span,
   .video-trigger img,
   .creative-video-button img,
   .video-trigger__play,
