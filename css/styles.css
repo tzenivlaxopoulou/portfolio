@@ -3027,3 +3027,39 @@ body.video-modal-open {
     transform: translate(-50%, -50%);
   }
 }
+
+
+/* ==========================================================
+   MEDIA — FINAL ROUNDED CORNERS
+========================================================== */
+
+/* LionIQ — large Website & Leo Experience visual */
+.output-feature img {
+  border-radius: 28px;
+}
+
+/* LionIQ — Ad Creative */
+.creative-output-card > img {
+  border-radius: 28px;
+}
+
+/* LionIQ — Short-form video */
+.creative-output-card .video-trigger {
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.creative-output-card .video-trigger img {
+  border-radius: 28px;
+}
+
+
+@media (max-width: 620px) {
+
+  .output-feature img,
+  .creative-output-card > img,
+  .creative-output-card .video-trigger,
+  .creative-output-card .video-trigger img {
+    border-radius: 20px;
+  }
+}
