@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>TV — Tzeni Vlachopoulou</title>
+  <rect width="64" height="64" rx="10" fill="#e8e1d8"/>
+  <g fill="#9a6268">
+    <path d="M7 16h24v6h-9v26h-6V22H7z"/>
+    <path d="M32 16h6l7 24 7-24h6L48 48h-6z"/>
+  </g>
+</svg>

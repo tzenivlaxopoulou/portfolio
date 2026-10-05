@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500;600&family=Inter:wght@400;500;600&display=swap");
-
 :root {
   --ivory: #e8e1d8;
   --burgundy: #9a6268;
+  --burgundy-text: #915b61;
   --ink: #11100f;
   --shell: min(1180px, calc(100% - 64px));
 }
@@ -328,6 +327,15 @@ a {
     font-size: 10px;
   }
 
+  .hero__nav a {
+    padding-block: 10px 15px;
+    margin-block: -10px;
+  }
+
+  .hero__nav a::after {
+    bottom: 10px;
+  }
+
   .hero__shape {
     width: 290px;
     height: 500px;
@@ -343,16 +351,16 @@ a {
   .hero__title {
     width: auto;
 
-    font-size: clamp(44px, 13vw, 64px);
+    font-size: clamp(42px, 13vw, 64px);
     line-height: 0.82;
     letter-spacing: 0.025em;
   }
 
   .hero__title-line2 {
-    margin-left: 38px;
+    margin-left: clamp(0px, calc(100vw - 360px), 38px);
     margin-top: 18px;
 
-    white-space: normal;
+    white-space: nowrap;
   }
 
   .hero__services {
@@ -429,7 +437,7 @@ a {
 
   margin-bottom: 16px;
 
-  color: var(--burgundy);
+  color: var(--burgundy-text);
 
   font-family: "Inter", sans-serif;
   font-size: 13px;
@@ -450,7 +458,7 @@ a {
 .project-category {
   margin: 18px 0 0;
 
-  color: var(--burgundy);
+  color: var(--burgundy-text);
 
   font-family: "Inter", sans-serif;
   font-size: 11px;
@@ -513,7 +521,7 @@ a {
 .project-subtitle {
   margin: 0 0 54px;
 
-  color: var(--burgundy);
+  color: var(--burgundy-text);
 
   font-family: "Cormorant SC", serif;
   font-size: 22px;
@@ -1152,9 +1160,11 @@ a {
   border-top-color: rgba(246, 236, 228, 0.45);
 }
 
+.project--elan .project__topline,
+.project--elan .project__eyebrow,
 .project--elan .project__text,
 .project--elan .project__role-line {
-  color: #fff3eb;
+  color: #fff;
 }
 
 @media (max-width: 1100px) {
@@ -1237,6 +1247,8 @@ a {
 .video-modal.is-open {
   visibility: visible;
   opacity: 1;
+  /* Make the close button focusable immediately; retain the opacity fade. */
+  transition-property: opacity;
 }
 
 .video-modal__backdrop {
@@ -1254,6 +1266,14 @@ a {
 
   width: min(420px, 90vw);
   max-height: 88vh;
+}
+
+.video-modal__focus-guard {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
 }
 
 .video-modal__player {
@@ -1309,7 +1329,9 @@ body.video-modal-open {
   }
 
   .video-modal__dialog {
-    width: min(390px, 92vw);
+    width: 100%;
+    max-width: 390px;
+    min-width: 0;
   }
 
   .video-modal__close {
@@ -1425,7 +1447,7 @@ body.video-modal-open {
   line-height: 1.3;
   letter-spacing: 0.045em;
 
-  color: #f6ece4;
+  color: #fff;
   text-transform: uppercase;
 }
 
@@ -1571,6 +1593,24 @@ body.video-modal-open {
   font-weight: 600;
   line-height: 1.4;
   letter-spacing: 0.02em;
+}
+
+.verdon-live-link {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 12px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.verdon-live-link:hover {
+  text-decoration-thickness: 2px;
+}
+
+.verdon-live-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
 }
 
 
@@ -1805,7 +1845,7 @@ body.video-modal-open {
 .creative-work-category {
   margin: 32px 0 0;
 
-  color: rgba(241, 236, 228, 0.55);
+  color: rgba(241, 236, 228, 0.75);
 
   font-family: "Inter", sans-serif;
   font-size: 11px;
@@ -2617,6 +2657,10 @@ body.video-modal-open {
   text-transform: uppercase;
 }
 
+.contact-header > span:first-child {
+  color: #fff;
+}
+
 
 /* ----------------------------------------------------------
    MAIN STATEMENT
@@ -2785,6 +2829,7 @@ body.video-modal-open {
     margin-top: 76px;
 
     font-size: clamp(45px, 7vw, 64px);
+    white-space: normal;
   }
 
   .contact-details {
@@ -2923,9 +2968,25 @@ body.video-modal-open {
 
 @media (min-width: 621px) and (max-width: 900px) {
 
+  .contact-section {
+    --contact-portrait-width: clamp(310px, 40vw, 360px);
+  }
+
   .contact-shell {
     height: auto;
     min-height: 1250px;
+    /* Reserve the portrait's height below the contact details. */
+    padding-bottom: calc(var(--contact-portrait-width) * 0.9183 + 48px);
+  }
+
+  .contact-portrait {
+    width: var(--contact-portrait-width);
+    right: -12px;
+    bottom: 0;
+  }
+
+  .contact-signature {
+    max-width: calc(100% - var(--contact-portrait-width) - 24px);
   }
 }
 
@@ -2942,4 +3003,27 @@ body.video-modal-open {
 .contact-detail a {
   font-family: Georgia, "Times New Roman", serif;
   text-transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .video-trigger img,
+  .creative-video-button img,
+  .video-trigger__play,
+  .video-modal {
+    transition: none;
+  }
+
+  .video-trigger:hover img,
+  .creative-video-button:hover img {
+    transform: none;
+  }
+
+  .video-trigger:hover .video-trigger__play,
+  .creative-video-button:hover .video-trigger__play {
+    transform: translate(-50%, -50%);
+  }
 }
