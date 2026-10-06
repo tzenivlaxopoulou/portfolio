@@ -3185,3 +3185,166 @@ body.video-modal-open {
     border-radius: 20px;
   }
 }
+
+/* ==========================================================
+   MOTION — progressive enhancement; no geometry changes
+========================================================== */
+:root {
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Fill covers the delay; the final dot removes the hero class and releases transforms. */
+.motion-hero .brand,
+.motion-hero .hero__menu-toggle,
+.motion-hero .hero__nav,
+.motion-hero .hero__services {
+  animation: motion-rise 650ms var(--motion-ease) both;
+  --motion-y: 10px;
+}
+
+.motion-hero .hero__nav,
+.motion-hero .hero__menu-toggle { animation-delay: 100ms; }
+.motion-hero .hero__shape { animation: motion-shape 1150ms var(--motion-ease) both; }
+.motion-hero .hero__title > span {
+  --motion-y: 28px;
+  animation: motion-rise 850ms var(--motion-ease) 250ms both;
+}
+.motion-hero .hero__title > span + span { animation-delay: 430ms; }
+.motion-hero .hero__services { animation-delay: 900ms; animation-duration: 750ms; }
+.motion-hero .hero__dot { animation: motion-dot 400ms var(--motion-ease) 1400ms both; }
+
+/* Keyboard/pointer navigation never waits for an entrance animation. */
+.motion-hero .brand:focus,
+.motion-hero .hero__nav:focus-within,
+.motion-hero .hero__menu-toggle:focus,
+.motion-hero .is-menu-open .hero__nav { animation: none; }
+
+@keyframes motion-rise {
+  from { opacity: 0; transform: translateY(var(--motion-y, 24px)); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes motion-shape {
+  from { opacity: 0.75; transform: translateX(-30px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes motion-dot {
+  from { opacity: 0; transform: scale(0.4); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Classes are armed only after a working observer has been installed. */
+.motion-reveal {
+  --motion-x: 0px;
+  --motion-y: 24px;
+  --motion-scale: 1;
+  --motion-duration: 720ms;
+  --motion-delay: 0ms;
+}
+.motion-reveal--scale { --motion-y: 20px; --motion-scale: 0.97; --motion-duration: 800ms; }
+.motion-reveal--title { --motion-y: 36px; --motion-duration: 850ms; }
+.motion-reveal--right { --motion-x: 20px; --motion-y: 20px; }
+.motion-delay-1 { --motion-delay: 120ms; }
+.motion-delay-2 { --motion-delay: 180ms; }
+.motion-ready .motion-reveal:not(.is-revealed) {
+  opacity: 0;
+  transform: translate(var(--motion-x), var(--motion-y)) scale(var(--motion-scale));
+}
+.motion-ready .motion-reveal.is-revealed {
+  animation: motion-reveal var(--motion-duration) var(--motion-ease) var(--motion-delay) backwards;
+}
+.motion-ready .motion-reveal.motion-focused { animation: none; }
+@keyframes motion-reveal {
+  from { opacity: 0; transform: translate(var(--motion-x), var(--motion-y)) scale(var(--motion-scale)); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Separate image translation from the parent's reveal and image hover transform. */
+.motion-parallax > img { translate: 0 var(--parallax-y, 0px); }
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .motion-visual > img,
+  .video-trigger img,
+  .creative-video-button img {
+    transition: transform 450ms var(--motion-ease), filter 450ms var(--motion-ease);
+  }
+  .motion-visual:hover > img,
+  .video-trigger:hover img,
+  .creative-video-button:hover img { transform: scale(1.015); }
+}
+/* Override the existing video zoom on touch devices, preserving desktop play UI. */
+@media (hover: none), (pointer: coarse) {
+  .video-trigger:hover img,
+  .creative-video-button:hover img { transform: none; filter: none; }
+  .video-trigger:hover .video-trigger__play,
+  .creative-video-button:hover .video-trigger__play { transform: translate(-50%, -50%); }
+}
+
+/* Ambient layers are bounded independently; captions and focus rings stay unclipped. */
+.lioniq-project,
+.creative-work-section { position: relative; isolation: isolate; }
+.lioniq-ambient {
+  position: absolute;
+  inset: 0 0 auto;
+  width: 100%;
+  height: min(1100px, 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+.creative-ambient {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+.creative-ambient span {
+  position: absolute;
+  width: min(760px, 85vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(154, 98, 104, 0.10), transparent 70%);
+  animation: motion-ambient 18s ease-in-out infinite alternate;
+  animation-play-state: paused;
+}
+.creative-ambient span:nth-child(1) { top: 2%; left: -15%; }
+.creative-ambient span:nth-child(2) {
+  top: 30%; right: -18%;
+  background: radial-gradient(circle, rgba(232, 225, 216, 0.055), transparent 70%);
+  animation-duration: 20s;
+  animation-delay: -8s;
+}
+.creative-ambient span:nth-child(3) {
+  bottom: 0; left: 10%;
+  background: radial-gradient(circle, rgba(12, 40, 84, 0.08), transparent 70%);
+  animation-duration: 16s;
+  animation-delay: -5s;
+}
+.ambient-running .creative-ambient span { animation-play-state: running; }
+@keyframes motion-ambient {
+  to { transform: translate(24px, -18px) scale(1.05); }
+}
+
+@media (max-width: 900px) {
+  .motion-parallax > img { translate: none; }
+}
+@media (max-width: 620px) {
+  .motion-reveal { --motion-x: 0px; --motion-y: 14px; --motion-delay: 0ms; }
+  .motion-reveal--scale { --motion-scale: 0.985; }
+  .motion-hero .hero__shape { animation: none; }
+  .motion-hero .hero__nav { animation: none; }
+  .lioniq-ambient { display: none; }
+  .creative-ambient span { animation: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .motion-ready .motion-reveal:not(.is-revealed) { opacity: 1; transform: none; }
+  .motion-parallax > img { translate: none; }
+  .motion-visual:hover > img { transform: none; }
+  .lioniq-ambient { display: none; }
+}
+
+@media print {
+  .motion-ready .motion-reveal { opacity: 1 !important; transform: none !important; animation: none !important; }
+  .lioniq-ambient, .creative-ambient { display: none; }
+}

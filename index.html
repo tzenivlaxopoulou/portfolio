@@ -23,6 +23,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500;600&amp;family=Inter:wght@400;500;600&amp;display=swap" />
+  <script>
+    // Only finite hero animations are armed early; content stays readable if main.js fails.
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && !location.hash) {
+      document.documentElement.classList.add('motion-hero');
+    }
+  </script>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -64,6 +70,7 @@
 ========================================= -->
 
 <section class="selected-work lioniq-project" id="work">
+  <canvas class="lioniq-ambient" aria-hidden="true"></canvas>
 
   <div class="project-shell">
 
@@ -503,6 +510,8 @@
   id="creative-work"
   aria-labelledby="creative-work-title"
 >
+
+  <div class="creative-ambient" aria-hidden="true"><span></span><span></span><span></span></div>
 
   <div class="creative-work-shell">
 
