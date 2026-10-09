@@ -22,7 +22,7 @@ body {
   margin: 0;
   background: var(--ivory);
   color: var(--ink);
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Instrument Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 
@@ -91,7 +91,7 @@ a {
 }
 
 .brand__name {
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 18px;
   font-weight: 500;
 }
@@ -99,7 +99,7 @@ a {
 .brand__role {
   padding-left: 22px;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -116,7 +116,7 @@ a {
   gap: 44px;
   padding-top: 4px;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -169,7 +169,7 @@ a {
   width: max-content;
   max-width: 100%;
 
-  font-family: "Cormorant SC", serif;
+  font-family: "Instrument Serif", serif;
   font-size: clamp(72px, 8.35vw, 128px);
   font-weight: 400;
 
@@ -212,7 +212,7 @@ a {
     0
     clamp(130px, 13vw, 210px);
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: clamp(16px, 1.45vw, 21px);
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -496,7 +496,7 @@ a {
   padding-bottom: 18px;
   border-bottom: 1px solid rgba(36, 35, 33, 0.35);
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -532,7 +532,7 @@ a {
 
   color: var(--burgundy-text);
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.05em;
@@ -541,7 +541,7 @@ a {
 .project-title {
   margin: 0;
 
-  font-family: "Cormorant SC", serif;
+  font-family: "Instrument Serif", serif;
   font-size: clamp(54px, 5.4vw, 78px);
   font-weight: 400;
   line-height: 0.95;
@@ -553,7 +553,7 @@ a {
 
   color: var(--burgundy-text);
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.045em;
@@ -565,7 +565,7 @@ a {
 
   margin: 118px 0 0;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.55;
@@ -616,7 +616,7 @@ a {
 
   color: var(--burgundy-text);
 
-  font-family: "Cormorant SC", serif;
+  font-family: "Instrument Serif", serif;
   font-size: 22px;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -638,7 +638,7 @@ a {
 
   margin: 0 0 28px;
 
-  font-family: "Cormorant SC", serif;
+  font-family: "Instrument Serif", serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 1.55;
@@ -649,7 +649,7 @@ a {
 .role-item p {
   margin: 0;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.45;
@@ -685,7 +685,7 @@ a {
 
   padding-top: 16px;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
 }
 
 .output-feature figcaption strong,
@@ -1427,7 +1427,7 @@ a {
   background: rgba(36, 35, 33, 0.92);
   color: #fff;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 27px;
   font-weight: 300;
   line-height: 1;
@@ -1550,7 +1550,7 @@ body.video-modal-open {
 .elan-heading__title {
   margin: 0;
 
-  font-family: "Cormorant SC", serif;
+  font-family: "Instrument Serif", serif;
   font-size: 46px;
   font-weight: 400;
   line-height: 1;
@@ -1562,7 +1562,7 @@ body.video-modal-open {
 .elan-heading__category {
   margin: 28px 0 0;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 13px;
   font-weight: 500;
   line-height: 1.3;
@@ -1624,7 +1624,7 @@ body.video-modal-open {
 
   border-bottom: 1px solid rgba(36, 35, 33, 0.45);
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.2;
@@ -1655,7 +1655,7 @@ body.video-modal-open {
 .verdon-title {
   margin: 0;
 
-  font-family: "Cormorant SC", serif;
+  font-family: "Instrument Serif", serif;
   font-size: 48px;
   font-weight: 400;
   line-height: 1;
@@ -1665,7 +1665,7 @@ body.video-modal-open {
 .verdon-category {
   margin: 34px 0 0;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 13px;
   font-weight: 600;
   line-height: 1.3;
@@ -1679,7 +1679,7 @@ body.video-modal-open {
 
   margin: 92px 0 0;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 2.15;
@@ -1698,7 +1698,7 @@ body.video-modal-open {
 .verdon-role__label {
   margin: 0 0 36px;
 
-  font-family: "Cormorant SC", serif;
+  font-family: "Instrument Serif", serif;
   font-size: 17px;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -1709,7 +1709,7 @@ body.video-modal-open {
 .verdon-role__text {
   margin: 0;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 15px;
   font-weight: 600;
   line-height: 1.4;
@@ -1934,7 +1934,7 @@ body.video-modal-open {
 
   border-bottom: 1px solid rgba(241, 236, 228, 0.35);
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.2;
@@ -1955,7 +1955,7 @@ body.video-modal-open {
 .creative-work-title {
   margin: 0;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.2;
@@ -1968,7 +1968,7 @@ body.video-modal-open {
 
   color: rgba(241, 236, 228, 0.75);
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -2046,7 +2046,7 @@ body.video-modal-open {
 
   padding-top: 34px;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   text-align: center;
 }
 
@@ -2213,7 +2213,7 @@ body.video-modal-open {
 
   border-bottom: 1px solid rgba(36, 35, 33, 0.35);
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.2;
@@ -2239,7 +2239,7 @@ body.video-modal-open {
 
   color: var(--burgundy);
 
-  font-family: "Cormorant SC", serif;
+  font-family: "Instrument Serif", serif;
   font-size: clamp(44px, 4.2vw, 64px);
   font-weight: 400;
   line-height: 1.12;
@@ -2274,7 +2274,7 @@ body.video-modal-open {
 .about-label {
   margin: 0 0 24px;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.045em;
@@ -2287,7 +2287,7 @@ body.video-modal-open {
 
   margin: 0;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.48;
@@ -2314,7 +2314,7 @@ body.video-modal-open {
 
   padding-left: 22px;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.15;
@@ -2347,7 +2347,7 @@ body.video-modal-open {
 .about-tools-title {
   margin: 0;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.035em;
@@ -2373,7 +2373,7 @@ body.video-modal-open {
 .about-tool-group h4 {
   margin: 0 0 20px;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.025em;
@@ -2384,7 +2384,7 @@ body.video-modal-open {
 .about-tool-group p {
   margin: 0;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
@@ -2658,7 +2658,7 @@ body.video-modal-open {
   }
 
   .about-curve circle {
-    r: 7;
+    r: 7px;
   }
 }
 
@@ -2770,7 +2770,7 @@ body.video-modal-open {
 
   border-bottom: 1px solid rgba(246, 240, 232, 0.55);
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -2799,7 +2799,7 @@ body.video-modal-open {
 .contact-heading__small {
   margin: 0;
 
-  font-family: "Cormorant SC", serif;
+  font-family: "Instrument Serif", serif;
   font-size: clamp(42px, 4.2vw, 62px);
   font-weight: 400;
   line-height: 1;
@@ -2810,7 +2810,7 @@ body.video-modal-open {
 .contact-heading__title {
   margin: 105px 0 0;
 
-  font-family: "Cormorant SC", serif;
+  font-family: "Instrument Serif", serif;
   font-size: clamp(56px, 5.5vw, 82px);
   font-weight: 400;
   line-height: 1;
@@ -2842,7 +2842,7 @@ body.video-modal-open {
 .contact-detail h3 {
   margin: 0 0 22px;
 
-  font-family: "Inter", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 1;
@@ -2856,7 +2856,7 @@ body.video-modal-open {
 
   color: #f6f0e8;
 
-  font-family: "Cormorant SC", serif;
+  font-family: "Instrument Serif", serif;
   font-size: 26px;
   font-weight: 400;
   line-height: 1.3;
@@ -2912,7 +2912,7 @@ body.video-modal-open {
 
   margin: 0;
 
-  font-family: "Cormorant SC", serif;
+  font-family: "Instrument Serif", serif;
   font-size: 15px;
   font-weight: 400;
 
@@ -3184,6 +3184,307 @@ body.video-modal-open {
   .creative-output-card .video-trigger img {
     border-radius: 20px;
   }
+}
+
+/* Editorial spreads: artwork and statements share the page. */
+:root {
+  --paper: #F0EBE3; --paper-soft: #F4F1EB; --paper-alt: #E8E1D8;
+  --ink: #171614; --ink-soft: #625D56; --accent: #9A6268;
+  --accent-strong: #8B555C; --dark: #211F1B; --light: #F4EFE7;
+  --ivory: var(--paper); --burgundy: var(--accent); --burgundy-text: var(--accent-strong);
+}
+body { font-family: "Instrument Sans", Arial, sans-serif; background: var(--paper); }
+h1, h2, .hero__title, .brand, .about-title, .contact-heading__small, .contact-heading__title, .contact-signature {
+  font-family: "Instrument Serif", Georgia, serif; font-weight: 400;
+}
+.hero { background: var(--paper); color: var(--ink); }
+.hero__nav, .hero__services, .hero__menu-toggle { font-family: "Instrument Sans", Arial, sans-serif; font-weight: 400; }
+.hero__services { letter-spacing: .01em; }
+.selected-work, .project--elan, .verdon-project { padding: 0 24px; background: var(--paper); color: var(--ink); }
+.project-shell, .project--elan > .shell, .verdon-shell { width: 100%; max-width: none; margin: 0; padding: 0; }
+.section-header { padding: 28px 8px; margin: 0; font: 11px/1.5 "Instrument Sans", sans-serif; color: var(--ink-soft); }
+.project-intro, .project__intro--elan, .verdon-intro {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: stretch;
+  min-height: 780px; height: min(960px, 95svh); margin: 0; padding: 0; border: 0;
+}
+.project-intro__copy, .project__intro--elan .project__copy, .verdon-copy {
+  position: relative; display: grid; grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr auto auto; align-content: stretch; gap: 0 20px;
+  width: auto; max-width: none; align-self: stretch; padding: 38px 9% 50px; background: var(--paper-soft); text-align: left;
+}
+.project-number, .project__topline, .verdon-header {
+  grid-column: 1 / -1; grid-row: 1; width: 100%; margin: 0; padding: 0;
+  font: 10px/1.5 "DM Mono", monospace; letter-spacing: .04em; color: var(--ink-soft);
+}
+.project__topline, .verdon-header { display: flex; justify-content: space-between; gap: 12px; }
+.project-description, .project__intro--elan .project__text, .verdon-description {
+  grid-column: 1 / -1; grid-row: 2; align-self: center; justify-self: center;
+  width: 86%; max-width: 440px; margin: 0 0 70px;
+  font: 400 clamp(27px, 2.6vw, 40px)/1.13 "Instrument Serif", Georgia, serif;
+  letter-spacing: -.025em; text-align: center; color: var(--ink);
+}
+.project-title, .elan-heading__title, .verdon-title {
+  font: 400 15px/1.4 "Instrument Sans", sans-serif; letter-spacing: .015em;
+  margin: 0 0 5px; color: var(--ink);
+}
+.project-title { grid-row: 3; grid-column: 1; }
+.project-category { grid-row: 4; grid-column: 1; }
+.project-category, .elan-heading__category, .verdon-category {
+  font: 400 11px/1.6 "Instrument Sans", sans-serif; letter-spacing: .015em;
+  margin: 0; color: var(--ink-soft); max-width: 310px;
+}
+.elan-heading, .verdon-meta { grid-row: 3 / 5; grid-column: 1; margin: 0; }
+.project-view-link, .verdon-live-link {
+  grid-column: 2; grid-row: 3 / 5; align-self: end; justify-self: end;
+  font: 400 11px/1.5 "Instrument Sans", sans-serif; white-space: nowrap;
+  padding: 12px 0; color: var(--ink); border: 0; background: none; margin: 0;
+}
+.project-view-link span, .verdon-live-link span { margin-left: 14px; }
+.project-view-link:hover, .verdon-live-link:hover { text-decoration: underline; text-underline-offset: 5px; }
+.project-intro__visuals, .project__visual--elan, .verdon-mobile {
+  width: 100%; max-width: none; height: 100%; margin: 0; padding: 7%;
+  display: flex; align-items: center; justify-content: center; background: var(--paper-alt);
+  border-radius: 0; overflow: hidden;
+}
+.project-image--top { width: 100%; margin: 0; }
+.project-image img, .project__visual--elan img, .verdon-mobile img {
+  display: block; width: 100%; height: auto; max-height: 690px; object-fit: contain;
+  border-radius: 4px; box-shadow: none;
+}
+.project__visual--elan { background: #70454b; padding: 5%; }
+.project__visual--elan img { width: auto; max-width: 100%; height: 100%; max-height: 720px; }
+.verdon-mobile { background: #dce0d3; padding: 5%; }
+.verdon-mobile img { width: auto; height: 100%; max-height: 700px; max-width: 100%; }
+.verdon-role { margin: 8px 0 0; }
+.verdon-role__label, .verdon-role__text { font: 400 11px/1.5 "Instrument Sans", sans-serif; color: var(--ink-soft); margin: 0; }
+.verdon-role__label { font-size: 9px; margin-top: 10px; }
+.verdon-live-link { position: absolute; bottom: 50px; right: 9%; }
+.verdon-meta { padding-right: 75px; }
+.project-visual-spread { background: #e4e0d9; padding: 7% 12%; margin: 0; }
+.project-image--leo { width: 100%; max-width: 1100px; margin: 0 auto; }
+.project-role { padding: 64px 5%; margin: 0; }
+.project-subtitle { font: 400 11px/1.5 "Instrument Sans", sans-serif; letter-spacing: .06em; margin: 0 0 25px; color: var(--ink-soft); }
+.role-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 35px; }
+.role-item { padding: 0; border: 0; text-align: left; }
+.role-item h4 { font: 400 11px/1.6 "Instrument Sans", sans-serif; margin: 0 0 10px; color: var(--ink); }
+.role-item p { font: 400 13px/1.6 "Instrument Sans", sans-serif; color: var(--ink-soft); margin: 0; }
+.selected-output { margin: 0; padding: 0; }
+.selected-output > .project-subtitle { margin: 0; padding: 15px 5%; }
+.output-feature { width: 100%; max-width: none; margin: 0; padding: 5% 9% 30px; background: var(--paper-alt); }
+.output-feature img { width: 100%; height: auto; border-radius: 4px; box-shadow: none; }
+.creative-output-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin: 4px 0 0; align-items: start; }
+.creative-output-card, .creative-output-card--social { width: 100%; max-width: none; margin: 0; padding: 5% 8% 24px; background: var(--paper-alt); border: 0; border-radius: 0; }
+.creative-output-card > img, .creative-output-card .video-trigger, .creative-output-card .video-trigger img {
+  display: block; width: 100%; height: 590px; object-fit: contain; border-radius: 4px; box-shadow: none; background: transparent;
+}
+.output-feature figcaption, .creative-output-card figcaption, .creative-caption {
+  display: flex; flex-wrap: wrap; gap: 5px 20px; text-align: left; padding: 16px 0 0; margin: 0;
+  font: 400 11px/1.5 "Instrument Sans", sans-serif; color: var(--ink-soft);
+}
+figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
+.elan-credits { padding: 26px 5%; margin: 0; display: flex; flex-wrap: wrap; gap: 12px 25px; }
+.elan-credits p { margin: 0; font: 400 11px/1.5 "Instrument Sans", sans-serif; color: var(--ink-soft); }
+.project__gallery--elan {
+  display: flex; align-items: center; justify-content: center; margin: 0; padding: 5% 12%;
+  width: 100%; max-width: none; background: #e2cec8; border-radius: 0;
+}
+.project__gallery--elan img { width: min(100%, 820px); height: auto; border-radius: 4px; box-shadow: none; }
+.verdon-desktop { width: 100%; max-width: none; margin: 0; padding: 7% 9%; background: #e1e3da; border-radius: 0; }
+.verdon-desktop img { width: 100%; height: auto; border-radius: 4px; box-shadow: none; }
+.creative-work-section { padding: 70px 24px; background: var(--dark); color: var(--light); }
+.creative-work-shell { width: 100%; max-width: none; }
+.creative-work-header { font: 400 11px/1.5 "Instrument Sans", sans-serif; color: #d1c8bd; }
+.creative-work-heading { margin: 35px 0; }
+.creative-work-title { font: 400 18px/1.4 "Instrument Sans", sans-serif; margin-bottom: 8px; }
+.creative-work-category { font: 400 11px/1.5 "Instrument Sans", sans-serif; color: #d1c8bd; }
+.creative-feature-card { width: 78%; max-width: 1050px; margin: 0 auto 60px; }
+.creative-video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; width: 100%; max-width: none; }
+.creative-small-card { width: 100%; max-width: none; margin: 0; padding: 4% 12%; }
+.creative-video-button, .creative-video-button img { border-radius: 4px; box-shadow: none; }
+.creative-feature-card img { width: 100%; height: auto; object-fit: contain; }
+.creative-small-card img { width: 100%; height: auto; max-height: 760px; object-fit: contain; }
+.creative-caption { color: #d1c8bd; }
+.video-trigger__play { width: 42px; height: 42px; font-size: 12px; }
+.about-section { background: var(--paper); padding: 90px 0 60px; color: var(--ink); }
+.about-title { font-weight: 400; font-size: clamp(40px, 6.3vw, 92px); line-height: 1; letter-spacing: -.035em; margin-bottom: 65px; }
+.about-text, .about-text p { font: 400 16px/1.75 "Instrument Sans", sans-serif; color: var(--ink-soft); }
+.about-services-list { font: 400 24px/1.65 "Instrument Serif", serif; }
+.about-header, .about-label, .about-tools-title, .about-tool-group h4 { font: 400 11px/1.6 "Instrument Sans", sans-serif; color: var(--ink-soft); }
+.about-tool-group p { font: 400 13px/1.7 "Instrument Sans", sans-serif; color: var(--ink-soft); }
+.about-tools { margin-top: 60px; }
+.about-curve { opacity: .35; height: 70px; margin-top: 35px; }
+.contact-section { background: var(--dark); color: var(--light); }
+.contact-header, .contact-detail h3 { font-family: "Instrument Sans", sans-serif; font-weight: 400; color: #d1c8bd; }
+.contact-detail p, .contact-detail a { font-family: "Instrument Sans", sans-serif; font-weight: 400; font-size: clamp(14px, 1.5vw, 21px); color: var(--light); }
+.contact-heading__title { font-weight: 400; letter-spacing: -.035em; }
+.lioniq-ambient { opacity: .12; }
+.creative-ambient { opacity: .18; }
+@media (max-width: 1023px) {
+  .project-intro, .project__intro--elan, .verdon-intro { min-height: 740px; height: 740px; }
+  .project-intro__copy, .project__intro--elan .project__copy, .verdon-copy { padding: 28px 7% 35px; }
+  .project-description, .project__intro--elan .project__text, .verdon-description { width: 95%; font-size: 29px; margin-bottom: 45px; }
+  .verdon-live-link { right: 7%; bottom: 28px; }
+  .role-grid { grid-template-columns: 1fr 1fr; }
+  .creative-output-card > img, .creative-output-card .video-trigger, .creative-output-card .video-trigger img { height: 440px; }
+}
+@media (max-width: 620px) {
+  .selected-work, .project--elan, .verdon-project { padding: 0 16px; }
+  .section-header { font-size: 9px; padding: 22px 0; }
+  .project-intro, .project__intro--elan, .verdon-intro { display: flex; flex-direction: column; min-height: 0; height: auto; }
+  .project-intro__copy, .project__intro--elan .project__copy, .verdon-copy { min-height: 540px; padding: 26px 24px 30px; }
+  .project-description, .project__intro--elan .project__text, .verdon-description { font-size: 31px; width: 100%; max-width: 330px; margin: 35px 0 50px; }
+  .project-title, .elan-heading__title, .verdon-title { font-size: 13px; }
+  .project-category, .elan-heading__category, .verdon-category { font-size: 10px; }
+  .project-view-link, .verdon-live-link { font-size: 10px; }
+  .project-intro__visuals { padding: 28px 14px; }
+  .project__visual--elan { padding: 0; }
+  .project__visual--elan img { width: 100%; height: auto; max-height: none; }
+  .verdon-mobile { height: 580px; padding: 25px; }
+  .verdon-mobile img { max-height: 530px; }
+  .verdon-live-link { bottom: 25px; right: 24px; }
+  .verdon-meta { padding-right: 45px; }
+  .verdon-role__text { font-size: 10px; }
+  .project-visual-spread { padding: 35px 0; }
+  .project-role { padding: 40px 8px; }
+  .role-grid { gap: 25px 20px; }
+  .role-item h4 { font-size: 10px; }
+  .role-item p { font-size: 12px; }
+  .output-feature { padding: 25px 0 20px; }
+  .creative-output-grid { grid-template-columns: 1fr; gap: 3px; }
+  .creative-output-card, .creative-output-card--social { padding: 20px 0; }
+  .creative-output-card > img, .creative-output-card .video-trigger, .creative-output-card .video-trigger img { height: auto; max-height: 580px; }
+  .project__gallery--elan { padding: 20px 0; }
+  .elan-credits { padding: 25px 8px; gap: 8px 15px; }
+  .verdon-desktop { padding: 35px 0; }
+  .creative-work-section { padding: 45px 16px; }
+  .creative-feature-card { width: 100%; margin-bottom: 35px; }
+  .creative-small-card { padding: 0; }
+  .creative-caption { font-size: 10px; }
+  .creative-video-grid { gap: 12px; }
+  .about-section { padding: 60px 0 35px; }
+  .about-title { font-size: clamp(34px, 8.5vw, 52px); margin-bottom: 40px; }
+  .about-text, .about-text p { font-size: 15px; }
+  .about-tools { margin-top: 35px; }
+}
+
+.project--elan .project__intro { grid-template-columns: 1fr 1fr; gap: 0; margin: 0; }
+.project--elan .project__visual--elan { width: 100%; max-width: none; margin: 0; justify-self: stretch; }
+.project--elan .project__gallery--elan { width: 100%; max-width: none; margin: 0; }
+.project--elan .project__topline { color: var(--ink-soft); border: 0; padding: 0; font: 400 10px/1.5 "DM Mono", monospace; }
+.project--elan .elan-credits .project__eyebrow, .project--elan .elan-credits .project__role-line { color: var(--ink-soft); font: 400 11px/1.5 "Instrument Sans", sans-serif; margin: 0; }
+.project--elan .elan-credits { margin: 0; }
+.project-intro__visuals .project-image--top { width: 100%; max-width: none; }
+.project-role, .section-header, .verdon-header { border: 0; }
+.verdon-live-link { text-decoration: none; }
+.project-view-link:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+.creative-output-card--social { padding: 0; }
+.creative-output-card--social > img { height: auto; max-height: none; border-radius: 0; }
+.creative-output-card--social figcaption { padding: 16px 20px 24px; }
+.creative-caption strong, .creative-caption span { font: inherit; color: inherit; }
+.creative-caption { flex-direction: row; align-items: baseline; justify-content: flex-start; }
+.creative-feature-card .creative-video-button img, .creative-small-card .creative-video-button img { border-radius: 4px; }
+.creative-feature-card, .creative-small-card { border-radius: 0; box-shadow: none; }
+.role-item h4 { min-height: 0; }
+@media (max-width: 620px) {
+  .project--elan .project__intro { display: flex; }
+}
+
+/* LionIQ outputs — alternating artwork and editorial statements. */
+.lioniq-output-sequence {
+  display: block;
+  margin: 0;
+}
+.lioniq-output-sequence .creative-output-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  width: 100%;
+  min-height: 740px;
+  height: min(900px, 95svh);
+  padding: 0;
+  margin: 0;
+  background: var(--paper-soft);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.lioniq-output-sequence .lioniq-output-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
+  padding: 42px;
+  background: var(--paper-alt);
+}
+.lioniq-output-sequence .lioniq-output-media > img,
+.lioniq-output-sequence .video-trigger,
+.lioniq-output-sequence .video-trigger img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: none;
+  background: transparent;
+}
+.lioniq-output-sequence figcaption {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  gap: 7px;
+  align-content: stretch;
+  margin: 0;
+  padding: 42px 9%;
+  text-align: left;
+  color: var(--ink-soft);
+}
+.lioniq-output-sequence .lioniq-output-statement {
+  align-self: center;
+  justify-self: center;
+  width: 84%;
+  margin: 0 0 55px;
+  font: 400 clamp(24.3px, 2.295vw, 34.2px)/1.15 "Instrument Serif", Georgia, serif;
+  letter-spacing: -.02em;
+  text-align: center;
+  color: var(--ink);
+}
+.lioniq-output-sequence figcaption strong,
+.lioniq-output-sequence figcaption > span {
+  font: 400 11px/1.6 "Instrument Sans", sans-serif;
+  letter-spacing: .01em;
+}
+.lioniq-output-sequence figcaption strong { color: var(--ink); }
+.lioniq-output-sequence .creative-output-card:nth-child(even) .lioniq-output-media {
+  grid-column: 2;
+  grid-row: 1;
+}
+.lioniq-output-sequence .creative-output-card:nth-child(even) figcaption {
+  grid-column: 1;
+  grid-row: 1;
+}
+@media (min-width: 1024px) {
+  .lioniq-output-sequence .creative-output-card--video .lioniq-output-media { padding: 12px 24px; }
+}
+@media (min-width: 621px) and (max-width: 1023px) {
+  .lioniq-output-sequence .creative-output-card { min-height: 650px; height: 740px; }
+  .lioniq-output-sequence .lioniq-output-media { padding: 24px; }
+  .lioniq-output-sequence figcaption { padding: 32px 8%; }
+  .lioniq-output-sequence .lioniq-output-statement { width: 90%; font-size: 26.1px; }
+}
+@media (max-width: 620px) {
+  .lioniq-output-sequence .creative-output-card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
+  }
+  .lioniq-output-sequence .creative-output-card:nth-child(even) figcaption { order: -1; }
+  .lioniq-output-sequence .lioniq-output-media { padding: 18px 12px; }
+  .lioniq-output-sequence .lioniq-output-media > img,
+  .lioniq-output-sequence .video-trigger,
+  .lioniq-output-sequence .video-trigger img { height: auto; max-height: none; }
+  .lioniq-output-sequence figcaption { min-height: 360px; padding: 28px 24px; }
+  .lioniq-output-sequence .lioniq-output-statement { width: 100%; max-width: 340px; font-size: 27px; margin-bottom: 24px; }
 }
 
 /* ==========================================================

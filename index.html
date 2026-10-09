@@ -22,7 +22,7 @@
   <meta name="twitter:image" content="https://tzenivlaxopoulou.github.io/portfolio/assets/social/portfolio-preview.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500;600&amp;family=Inter:wght@400;500;600&amp;display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&amp;family=Instrument+Sans:wght@400;500;600&amp;family=Instrument+Serif&amp;display=swap" />
   <script>
     // Only finite hero animations are armed early; content stays readable if main.js fails.
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && !location.hash) {
@@ -69,7 +69,7 @@
      01 — SELECTED WORK / LIONIQ
 ========================================= -->
 
-<section class="selected-work lioniq-project" id="work">
+<section class="selected-work lioniq-project" id="work" aria-labelledby="lioniq-title">
   <canvas class="lioniq-ambient" aria-hidden="true"></canvas>
 
   <div class="project-shell">
@@ -90,12 +90,12 @@
 
     <div class="project-intro">
 
-      <!-- Left: project information -->
+      <!-- Editorial statement panel -->
       <div class="project-intro__copy">
 
         <span class="project-number">01</span>
 
-        <h2 class="project-title">
+        <h2 class="project-title" id="lioniq-title">
           LIONIQ
         </h2>
 
@@ -110,10 +110,12 @@
           advertising materials.
         </p>
 
+        <a class="project-view-link" href="#lioniq-visuals">VIEW <span aria-hidden="true">→</span></a>
+
       </div>
 
 
-      <!-- Right: website screenshots -->
+      <!-- Immersive image panel -->
       <div class="project-intro__visuals">
 
         <figure class="project-image project-image--top">
@@ -125,17 +127,19 @@
           >
         </figure>
 
-        <figure class="project-image project-image--leo">
-          <img
-            src="assets/images/lioniq/lioniq-leo-chat.png"
-            width="1834" height="1022"
-            loading="lazy" decoding="async"
-            alt="LionIQ Leo AI assistant experience"
-          >
-        </figure>
-
       </div>
 
+    </div>
+
+    <div class="project-visual-spread project-visual-spread--lioniq" id="lioniq-visuals">
+      <figure class="project-image project-image--leo">
+        <img
+          src="assets/images/lioniq/lioniq-leo-chat.png"
+          width="1834" height="1022"
+          loading="lazy" decoding="async"
+          alt="LionIQ Leo AI assistant experience"
+        >
+      </figure>
     </div>
 
 
@@ -153,56 +157,44 @@
 
         <article class="role-item">
           <h4>
-            BRAND<br>
-            DIRECTION
+            BRAND DIRECTION
           </h4>
 
           <p>
-            Visual direction,<br>
-            positioning &amp; brand<br>
-            communication.
+            Visual direction, positioning &amp; brand communication.
           </p>
         </article>
 
 
         <article class="role-item">
           <h4>
-            WEBSITE CONTENT<br>
-            &amp; UX DIRECTION
+            WEBSITE CONTENT &amp; UX DIRECTION
           </h4>
 
           <p>
-            Content structure,<br>
-            messaging, CTAs &amp;<br>
-            user journey.
+            Content structure, messaging, CTAs &amp; user journey.
           </p>
         </article>
 
 
         <article class="role-item">
           <h4>
-            DIGITAL MARKETING<br>
-            STRATEGY
+            DIGITAL MARKETING STRATEGY
           </h4>
 
           <p>
-            Paid media strategy,<br>
-            offers &amp; tracking<br>
-            direction.
+            Paid media strategy, offers &amp; tracking direction.
           </p>
         </article>
 
 
         <article class="role-item">
           <h4>
-            CREATIVE DIRECTION<br>
-            &amp; AD CREATIVES
+            CREATIVE DIRECTION &amp; AD CREATIVES
           </h4>
 
           <p>
-            Concepts, graphics<br>
-            &amp; short-form video<br>
-            creatives.
+            Concepts, graphics &amp; short-form video creatives.
           </p>
         </article>
 
@@ -246,19 +238,20 @@
 
 
       <!-- Creative outputs -->
-      <div class="creative-output-grid">
+      <div class="creative-output-grid lioniq-output-sequence">
 
         <!-- Static ad -->
         <figure class="creative-output-card">
-
+          <div class="lioniq-output-media">
           <img
             src="assets/images/lioniq/lioniq-ad-creative.png"
             width="1208" height="1510"
             loading="lazy" decoding="async"
             alt="LionIQ advertising creative featuring Leo"
           >
-
+          </div>
           <figcaption>
+            <p class="lioniq-output-statement">Static campaign creative developed for LionIQ, combining the Leo character with a clear promotional message and branded visual direction.</p>
             <strong>
               AD CREATIVE
             </strong>
@@ -276,7 +269,7 @@
           class="creative-output-card creative-output-card--video"
           id="lioniq-video"
         >
-
+          <div class="lioniq-output-media">
           <button
             class="video-trigger"
             type="button"
@@ -295,8 +288,9 @@
             
 
           </button>
-
+          </div>
           <figcaption>
+            <p class="lioniq-output-statement">A short-form branded video created to introduce LionIQ’s digital experience through Leo and a more dynamic visual format.</p>
             <strong>
               SHORT-FORM VIDEO
             </strong>
@@ -310,7 +304,7 @@
 
         <!-- Social media creative / Photoshop -->
 <figure class="creative-output-card creative-output-card--social creative-output-card--social-left">
-
+  <div class="lioniq-output-media">
   <img
     src="assets/images/lioniq/lioniq-social-creative.png"
     width="1204"
@@ -319,8 +313,9 @@
     decoding="async"
     alt="LionIQ social media creative featuring Leo and the AI assistant interface"
   >
-
+  </div>
   <figcaption>
+    <p class="lioniq-output-statement">A composited social creative presenting Leo as an always-available digital assistant within LionIQ’s visual identity.</p>
     <strong>
       SOCIAL MEDIA CREATIVE
     </strong>
@@ -335,7 +330,7 @@
 
 <!-- Think AI creative / Canva -->
 <figure class="creative-output-card creative-output-card--social creative-output-card--social-right">
-
+  <div class="lioniq-output-media">
   <img
     src="assets/images/lioniq/lioniq-think-ai.png"
     width="1196"
@@ -344,14 +339,15 @@
     decoding="async"
     alt="LionIQ Think AI Feel Human brand creative featuring Leo"
   >
-
+  </div>
   <figcaption>
+    <p class="lioniq-output-statement">A brand-led creative built around LionIQ’s central positioning: combining AI capability with a human-centered digital experience.</p>
     <strong>
-      SOCIAL MEDIA CREATIVE
+      THINK AI. FEEL HUMAN.
     </strong>
 
     <span>
-      Concept · Canva
+      Concept · Creative Direction · Canva
     </span>
   </figcaption>
 
@@ -369,37 +365,7 @@
 
   <section class="project project--elan" aria-labelledby="project-elan-title">
   <div class="shell">
-    <div class="project__topline">
-      <span>02</span>
-      <span>CONCEPT PROJECT · 2026</span>
-    </div>
-
-    <div class="elan-heading">
-  <h2 class="elan-heading__title" id="project-elan-title">
-    ÉLAN SKIN
-  </h2>
-
-  <p class="elan-heading__category">
-    VISUAL DIRECTION · SOCIAL CREATIVE · AD DESIGN
-  </p>
-</div>
-
     <div class="project__intro project__intro--elan">
-      <div class="project__copy">
-        <p class="project__eyebrow">THE CONCEPT</p>
-        <p class="project__text">
-          A skincare campaign concept created around a premium Vitamin C serum,
-          combining product-focused art direction with promotional social advertising.
-        </p>
-
-        <div class="project__role-block">
-          <p class="project__eyebrow">MY ROLE</p>
-          <p class="project__role-line">
-            Concept · Art Direction · Photoshop · Ad Creative
-          </p>
-        </div>
-      </div>
-
       <div class="project__visual project__visual--elan">
         <img
           src="assets/images/elan/elan-ad-01.png"
@@ -408,9 +374,35 @@
           alt="ÉLAN Skin Vitamin C Glow Serum promotional creative"
         />
       </div>
+
+      <div class="project__copy">
+        <div class="project__topline">
+          <span>02</span>
+          <span>CONCEPT PROJECT · 2026</span>
+        </div>
+
+        <p class="project__text">
+          A skincare campaign concept created around a premium Vitamin C serum,
+          combining product-focused art direction with promotional social advertising.
+        </p>
+
+        <div class="elan-heading">
+          <h2 class="elan-heading__title" id="project-elan-title">ÉLAN SKIN</h2>
+          <p class="elan-heading__category">VISUAL DIRECTION · SOCIAL CREATIVE · AD DESIGN</p>
+        </div>
+
+        <a class="project-view-link" href="#elan-visuals">VIEW <span aria-hidden="true">→</span></a>
+      </div>
     </div>
 
-    <div class="project__gallery project__gallery--elan">
+        <div class="project__role-block elan-credits">
+          <p class="project__eyebrow">THE CONCEPT</p>
+          <p class="project__eyebrow">MY ROLE</p>
+          <p class="project__role-line">
+            Concept · Art Direction · Photoshop · Ad Creative
+          </p>
+        </div>
+    <div class="project__gallery project__gallery--elan" id="elan-visuals">
       <img
         src="assets/images/elan/elan-ad-02.png"
         width="1796" height="1796"
@@ -430,18 +422,24 @@
 
   <div class="verdon-shell">
 
-    <!-- Header -->
-    <header class="verdon-header">
-      <span>03</span>
-      <span>LIVE PROJECT · 2026</span>
-    </header>
-
-
     <!-- Intro -->
     <div class="verdon-intro">
 
       <!-- Left -->
       <div class="verdon-copy">
+
+        <header class="verdon-header">
+          <span>03</span>
+          <span>LIVE PROJECT · 2026</span>
+        </header>
+
+        <p class="verdon-description">
+          A modern website created for Verdon, a landscaping and outdoor
+          services business, with a focus on clear service presentation, strong
+          visual identity and an easy way for potential clients to get in touch.
+        </p>
+
+        <div class="verdon-meta">
 
         <h2 class="verdon-title" id="verdon-title">
           VERDON
@@ -451,24 +449,15 @@
           WEBSITE DESIGN · DIGITAL PRESENCE
         </p>
 
-        
-
-        <p class="verdon-description">
-  A modern website created for<br class="verdon-desktop-break">
-  Verdon, a landscaping and outdoor<br class="verdon-desktop-break">
-  services business, with a focus on<br class="verdon-desktop-break">
-  clear service presentation, strong<br class="verdon-desktop-break">
-  visual identity and an easy way for<br class="verdon-desktop-break">
-  potential clients to get in touch.
-</p>
-
         <div class="verdon-role">
           <p class="verdon-role__label">MY ROLE</p>
 
           <p class="verdon-role__text">
             Web Design · Content Structure · Visual Direction · Digital Presence
           </p>
-          <a class="verdon-live-link" href="https://verdon.gr" target="_blank" rel="noopener noreferrer">Visit live website</a>
+          <a class="verdon-live-link" href="https://verdon.gr" target="_blank" rel="noopener noreferrer">VIEW LIVE <span aria-hidden="true">→</span></a>
+        </div>
+
         </div>
 
       </div>
