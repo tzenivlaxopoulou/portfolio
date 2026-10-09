@@ -36,6 +36,10 @@ a {
   margin-inline: auto;
 }
 
+
+
+
+
 /* ------------------------------
    HERO
 ------------------------------ */
@@ -3312,7 +3316,7 @@ figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
 .about-header, .about-label, .about-tools-title, .about-tool-group h4 { font: 400 11px/1.6 "Instrument Sans", sans-serif; color: var(--ink-soft); }
 .about-tool-group p { font: 400 13px/1.7 "Instrument Sans", sans-serif; color: var(--ink-soft); }
 .about-tools { margin-top: 60px; }
-.about-curve { opacity: .35; height: 70px; margin-top: 35px; }
+.about-curve { opacity: 1; height: auto; margin-top: 35px; }
 .contact-section { background: var(--dark); color: var(--light); }
 .contact-header, .contact-detail h3 { font-family: "Instrument Sans", sans-serif; font-weight: 400; color: #d1c8bd; }
 .contact-detail p, .contact-detail a { font-family: "Instrument Sans", sans-serif; font-weight: 400; font-size: clamp(14px, 1.5vw, 21px); color: var(--light); }
@@ -3648,4 +3652,37 @@ figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
 @media print {
   .motion-ready .motion-reveal { opacity: 1 !important; transform: none !important; animation: none !important; }
   .lioniq-ambient, .creative-ambient { display: none; }
+}
+
+
+/* ABOUT CURVE — closer to Figma */
+@media (min-width: 901px) {
+  .about-curve {
+    width: calc(100% + 80px);
+    margin-left: -40px;
+    margin-top: 55px;
+
+    overflow: visible;
+  }
+
+  .about-curve svg {
+    display: block;
+    width: 100%;
+    height: 240px;
+
+   
+
+    overflow: visible;
+  }
+
+  .about-curve path {
+    fill: none;
+    stroke: var(--burgundy);
+    stroke-width: 2;
+    
+  }
+
+  .about-curve circle {
+    r: 5px;
+  }
 }
