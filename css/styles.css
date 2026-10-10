@@ -3686,3 +3686,120 @@ figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
     r: 5px;
   }
 }
+
+/* Static editorial interlude within Creative Work. */
+.topothessia-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  margin: 0;
+}
+.topothessia-entry__artwork {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 7%;
+}
+.topothessia-entry__artwork img {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  border-radius: var(--media-radius);
+}
+.topothessia-entry__copy {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  gap: 7px;
+  padding: 42px 9%;
+  color: var(--light);
+}
+.topothessia-entry__statement {
+  align-self: center;
+  justify-self: center;
+  width: 84%;
+  margin: 0 0 45px;
+  font: 400 clamp(24.3px, 2.295vw, 34.2px)/1.15 "Instrument Serif", Georgia, serif;
+  letter-spacing: -.02em;
+  text-align: center;
+}
+.topothessia-entry__copy h3,
+.topothessia-entry__metadata {
+  margin: 0;
+  font: 400 11px/1.6 "Instrument Sans", sans-serif;
+  letter-spacing: .01em;
+}
+.topothessia-entry__metadata { color: #d1c8bd; }
+@media (min-width: 621px) and (max-width: 1023px) {
+  .topothessia-entry__artwork { padding: 24px 5%; }
+  .topothessia-entry__copy { padding: 28px 6%; }
+  .topothessia-entry__statement { width: 100%; font-size: 26.1px; margin-bottom: 28px; }
+}
+@media (max-width: 620px) {
+  .topothessia-entry { grid-template-columns: minmax(0, 1fr); }
+  .topothessia-entry__artwork { padding: 18px 0; }
+  .topothessia-entry__copy { min-height: 360px; padding: 28px 24px; }
+  .topothessia-entry__statement { width: 100%; max-width: 340px; font-size: 27px; margin-bottom: 24px; }
+}
+
+/* Artwork only: keep editorial panels square. */
+:root { --media-radius: 28px; }
+.project-image img,
+.project__visual--elan img,
+.project__gallery--elan img,
+.verdon-mobile img,
+.verdon-desktop img,
+.output-feature img,
+.lioniq-output-sequence .lioniq-output-media > img,
+.lioniq-output-sequence .video-trigger,
+.lioniq-output-sequence .video-trigger img,
+.creative-video-button,
+.creative-feature-card .creative-video-button img,
+.creative-small-card .creative-video-button img {
+  border-radius: var(--media-radius);
+}
+.lioniq-output-sequence .video-trigger,
+.creative-video-button { overflow: hidden; }
+/* Contained artwork keeps its existing size; clip its visible bounds,
+   rather than rounding the empty letterbox around it. */
+@media (min-width: 621px) {
+  .lioniq-output-sequence .lioniq-output-media { container-type: size; }
+  .lioniq-output-sequence .lioniq-output-media:has(.video-trigger:focus-visible) {
+    outline: 2px solid var(--burgundy);
+    outline-offset: -6px;
+  }
+  .lioniq-output-sequence .creative-output-card:nth-child(1) { --art-ratio: 0.8; }
+  .lioniq-output-sequence .creative-output-card:nth-child(2) { --art-ratio: 0.562244898; }
+  .lioniq-output-sequence .creative-output-card:nth-child(3) { --art-ratio: 0.799468792; }
+  .lioniq-output-sequence .creative-output-card:nth-child(4) { --art-ratio: 0.800535475; }
+  .lioniq-output-sequence .lioniq-output-media > img,
+  .lioniq-output-sequence .video-trigger,
+  .lioniq-output-sequence .video-trigger img {
+    clip-path: inset(
+      max(0px, (100cqh - 100cqw / var(--art-ratio)) / 2)
+      max(0px, (100cqw - 100cqh * var(--art-ratio)) / 2)
+      round var(--media-radius)
+    );
+  }
+}
+@media (max-width: 620px) {
+  :root { --media-radius: 20px; }
+}
+
+
+
+/* ÉLAN mobile — clean rounded artwork */
+@media (max-width: 620px) {
+  .project__visual--elan,
+  .project__gallery--elan {
+    padding: 0;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .project__visual--elan img,
+  .project__gallery--elan img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    border-radius: 0;
+  }
+}
