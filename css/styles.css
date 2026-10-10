@@ -3786,11 +3786,13 @@ figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
 
 
 
-/* ÉLAN mobile — clean rounded artwork */
+
+/* ÉLAN mobile — clean artwork, no background behind image */
 @media (max-width: 620px) {
   .project__visual--elan,
   .project__gallery--elan {
     padding: 0;
+    background: transparent;
     border-radius: 20px;
     overflow: hidden;
   }
@@ -3800,6 +3802,7 @@ figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
     display: block;
     width: 100%;
     max-width: none;
-    border-radius: 0;
+    height: auto;
+    border-radius: 20px;
   }
 }
