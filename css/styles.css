@@ -204,7 +204,7 @@ a {
   border-radius: 50%;
   background: var(--burgundy);
 
-  vertical-align: 0.1em;
+  vertical-align: -0.03em;
 }
 
 /* Services */
@@ -2033,7 +2033,7 @@ body.video-modal-open {
 }
 
 .creative-feature-card .creative-video-button img {
-  border-radius: 38px;
+  border-radius: 0;
 }
 
 
@@ -2089,7 +2089,7 @@ body.video-modal-open {
 }
 
 .creative-small-card .creative-video-button img {
-  border-radius: 34px;
+  border-radius: 0;
 }
 
 
@@ -2153,7 +2153,7 @@ body.video-modal-open {
   }
 
   .creative-feature-card .creative-video-button img {
-    border-radius: 24px;
+    border-radius: 0;
   }
 
   .creative-caption {
@@ -2181,7 +2181,7 @@ body.video-modal-open {
   }
 
   .creative-small-card .creative-video-button img {
-    border-radius: 26px;
+    border-radius: 0;
   }
 }
 
@@ -3155,41 +3155,6 @@ body.video-modal-open {
 }
 
 
-/* ==========================================================
-   MEDIA — FINAL ROUNDED CORNERS
-========================================================== */
-
-/* LionIQ — large Website & Leo Experience visual */
-.output-feature img {
-  border-radius: 28px;
-}
-
-/* LionIQ — Ad Creative */
-.creative-output-card > img {
-  border-radius: 28px;
-}
-
-/* LionIQ — Short-form video */
-.creative-output-card .video-trigger {
-  border-radius: 28px;
-  overflow: hidden;
-}
-
-.creative-output-card .video-trigger img {
-  border-radius: 28px;
-}
-
-
-@media (max-width: 620px) {
-
-  .output-feature img,
-  .creative-output-card > img,
-  .creative-output-card .video-trigger,
-  .creative-output-card .video-trigger img {
-    border-radius: 20px;
-  }
-}
-
 /* Editorial spreads: artwork and statements share the page. */
 :root {
   --paper: #F0EBE3; --paper-soft: #F4F1EB; --paper-alt: #E8E1D8;
@@ -3253,7 +3218,7 @@ h1, h2, .hero__title, .brand, .about-title, .contact-heading__small, .contact-he
 .project-image--top { width: 100%; margin: 0; }
 .project-image img, .project__visual--elan img, .verdon-mobile img {
   display: block; width: 100%; height: auto; max-height: 690px; object-fit: contain;
-  border-radius: 4px; box-shadow: none;
+  border-radius: 0; box-shadow: none;
 }
 .project__visual--elan { background: #70454b; padding: 5%; }
 .project__visual--elan img { width: auto; max-width: 100%; height: 100%; max-height: 720px; }
@@ -3275,11 +3240,11 @@ h1, h2, .hero__title, .brand, .about-title, .contact-heading__small, .contact-he
 .selected-output { margin: 0; padding: 0; }
 .selected-output > .project-subtitle { margin: 0; padding: 15px 5%; }
 .output-feature { width: 100%; max-width: none; margin: 0; padding: 5% 9% 30px; background: var(--paper-alt); }
-.output-feature img { width: 100%; height: auto; border-radius: 4px; box-shadow: none; }
+.output-feature img { width: 100%; height: auto; border-radius: 0; box-shadow: none; }
 .creative-output-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin: 4px 0 0; align-items: start; }
 .creative-output-card, .creative-output-card--social { width: 100%; max-width: none; margin: 0; padding: 5% 8% 24px; background: var(--paper-alt); border: 0; border-radius: 0; }
 .creative-output-card > img, .creative-output-card .video-trigger, .creative-output-card .video-trigger img {
-  display: block; width: 100%; height: 590px; object-fit: contain; border-radius: 4px; box-shadow: none; background: transparent;
+  display: block; width: 100%; height: 590px; object-fit: contain; border-radius: 0; box-shadow: none; background: transparent;
 }
 .output-feature figcaption, .creative-output-card figcaption, .creative-caption {
   display: flex; flex-wrap: wrap; gap: 5px 20px; text-align: left; padding: 16px 0 0; margin: 0;
@@ -3292,9 +3257,9 @@ figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
   display: flex; align-items: center; justify-content: center; margin: 0; padding: 5% 12%;
   width: 100%; max-width: none; background: #e2cec8; border-radius: 0;
 }
-.project__gallery--elan img { width: min(100%, 820px); height: auto; border-radius: 4px; box-shadow: none; }
+.project__gallery--elan img { width: min(100%, 820px); height: auto; border-radius: 0; box-shadow: none; }
 .verdon-desktop { width: 100%; max-width: none; margin: 0; padding: 7% 9%; background: #e1e3da; border-radius: 0; }
-.verdon-desktop img { width: 100%; height: auto; border-radius: 4px; box-shadow: none; }
+.verdon-desktop img { width: 100%; height: auto; border-radius: 0; box-shadow: none; }
 .creative-work-section { padding: 70px 24px; background: var(--dark); color: var(--light); }
 .creative-work-shell { width: 100%; max-width: none; }
 .creative-work-header { font: 400 11px/1.5 "Instrument Sans", sans-serif; color: #d1c8bd; }
@@ -3304,7 +3269,7 @@ figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
 .creative-feature-card { width: 78%; max-width: 1050px; margin: 0 auto 60px; }
 .creative-video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; width: 100%; max-width: none; }
 .creative-small-card { width: 100%; max-width: none; margin: 0; padding: 4% 12%; }
-.creative-video-button, .creative-video-button img { border-radius: 4px; box-shadow: none; }
+.creative-video-button, .creative-video-button img { border-radius: 0; box-shadow: none; }
 .creative-feature-card img { width: 100%; height: auto; object-fit: contain; }
 .creative-small-card img { width: 100%; height: auto; max-height: 760px; object-fit: contain; }
 .creative-caption { color: #d1c8bd; }
@@ -3386,7 +3351,7 @@ figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
 .creative-output-card--social figcaption { padding: 16px 20px 24px; }
 .creative-caption strong, .creative-caption span { font: inherit; color: inherit; }
 .creative-caption { flex-direction: row; align-items: baseline; justify-content: flex-start; }
-.creative-feature-card .creative-video-button img, .creative-small-card .creative-video-button img { border-radius: 4px; }
+.creative-feature-card .creative-video-button img, .creative-small-card .creative-video-button img { border-radius: 0; }
 .creative-feature-card, .creative-small-card { border-radius: 0; box-shadow: none; }
 .role-item h4 { min-height: 0; }
 @media (max-width: 620px) {
@@ -3428,7 +3393,7 @@ figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
   height: 100%;
   max-height: 100%;
   object-fit: contain;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: none;
   background: transparent;
 }
@@ -3482,7 +3447,7 @@ figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
     height: auto;
     min-height: 0;
   }
-  .lioniq-output-sequence .creative-output-card:nth-child(even) figcaption { order: -1; }
+  
   .lioniq-output-sequence .lioniq-output-media { padding: 18px 12px; }
   .lioniq-output-sequence .lioniq-output-media > img,
   .lioniq-output-sequence .video-trigger,
@@ -3703,7 +3668,7 @@ figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
   width: 100%;
   max-width: 560px;
   height: auto;
-  border-radius: var(--media-radius);
+  border-radius: 0;
 }
 .topothessia-entry__copy {
   display: grid;
@@ -3741,7 +3706,6 @@ figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
 }
 
 /* Artwork only: keep editorial panels square. */
-:root { --media-radius: 28px; }
 .project-image img,
 .project__visual--elan img,
 .project__gallery--elan img,
@@ -3754,12 +3718,11 @@ figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
 .creative-video-button,
 .creative-feature-card .creative-video-button img,
 .creative-small-card .creative-video-button img {
-  border-radius: var(--media-radius);
+  border-radius: 0;
 }
 .lioniq-output-sequence .video-trigger,
 .creative-video-button { overflow: hidden; }
-/* Contained artwork keeps its existing size; clip its visible bounds,
-   rather than rounding the empty letterbox around it. */
+/* Keep hover clipping aligned with the unchanged contained artwork bounds. */
 @media (min-width: 621px) {
   .lioniq-output-sequence .lioniq-output-media { container-type: size; }
   .lioniq-output-sequence .lioniq-output-media:has(.video-trigger:focus-visible) {
@@ -3776,12 +3739,8 @@ figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
     clip-path: inset(
       max(0px, (100cqh - 100cqw / var(--art-ratio)) / 2)
       max(0px, (100cqw - 100cqh * var(--art-ratio)) / 2)
-      round var(--media-radius)
     );
   }
-}
-@media (max-width: 620px) {
-  :root { --media-radius: 20px; }
 }
 
 
@@ -3793,7 +3752,7 @@ figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
   .project__gallery--elan {
     padding: 0;
     background: transparent;
-    border-radius: 20px;
+    border-radius: 0;
     overflow: hidden;
   }
 
@@ -3803,6 +3762,278 @@ figcaption strong, figcaption span { font: inherit; letter-spacing: .01em; }
     width: 100%;
     max-width: none;
     height: auto;
-    border-radius: 20px;
+    border-radius: 0;
+  }
+}
+
+/* Mobile artwork bleeds through the section gutter; text keeps its own geometry. */
+@media (max-width: 620px) {
+  .project-intro__visuals,
+  .project-visual-spread--lioniq,
+  .output-feature > img,
+  .lioniq-output-sequence .lioniq-output-media,
+  .project--elan .project__visual--elan,
+  .project--elan .project__gallery--elan,
+  .verdon-mobile,
+  .verdon-desktop,
+  .creative-feature-card > .creative-video-button,
+  .topothessia-entry__artwork {
+    width: calc(100% + 32px);
+    max-width: none;
+    margin-inline: -16px;
+  }
+
+  .project-intro__visuals,
+  .lioniq-output-sequence .lioniq-output-media,
+  .verdon-mobile {
+    padding-inline: 0;
+  }
+
+  /* Let the complete phone artwork grow with its width instead of letterboxing. */
+  .verdon-mobile {
+    height: auto;
+    min-height: 580px;
+  }
+  .verdon-mobile img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+  .topothessia-entry__artwork img {
+    max-width: none;
+  }
+}
+
+@media (max-width: 620px) {
+  /* Each short-form video gets a full-width spread; captions stay in the gutter. */
+  .creative-video-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .creative-small-card > .creative-video-button {
+    width: calc(100% + 32px);
+    margin-inline: -16px;
+  }
+  .creative-small-card .creative-video-button img {
+    max-height: none;
+  }
+}
+
+
+
+
+ 
+
+
+/* ==========================================================
+   MOBILE — TRUE FULL-WIDTH LIONIQ SPREADS
+   Make the PARENT full bleed, not the individual caption.
+========================================================== */
+
+@media (max-width: 620px) {
+
+  /*
+   * The section keeps its 16px gutter for headings/metadata.
+   * The actual editorial spreads escape that gutter.
+   */
+  .project-intro,
+  .output-feature,
+  .lioniq-output-sequence .creative-output-card {
+    width: calc(100% + 32px);
+    max-width: none;
+    margin-left: -16px;
+    margin-right: -16px;
+    box-sizing: border-box;
+  }
+
+  /*
+   * Children now fill their full-width parent.
+   * Do NOT apply another negative margin here.
+   */
+  .project-intro__copy,
+  .project-intro__visuals,
+  .output-feature > img,
+  .output-feature figcaption,
+  .lioniq-output-sequence .lioniq-output-media,
+  .lioniq-output-sequence figcaption {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  /* LionIQ intro text panel */
+  .project-intro__copy {
+    padding-left: 24px;
+    padding-right: 24px;
+    background: var(--paper-soft);
+  }
+
+  /* Website & Leo caption */
+  .output-feature figcaption {
+    padding-left: 24px;
+    padding-right: 24px;
+    background: var(--paper-alt);
+  }
+
+  /*
+   * All four LionIQ editorial statement panels.
+   * The background itself now reaches both screen edges.
+   */
+  .lioniq-output-sequence figcaption {
+    min-height: 360px;
+    padding: 28px 24px;
+    background: var(--paper-soft);
+  }
+
+  .lioniq-output-sequence .lioniq-output-statement {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /*
+   * Artwork also fills the spread width.
+   */
+  .project-intro__visuals,
+  .lioniq-output-sequence .lioniq-output-media {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+/* ==========================================================
+   MOBILE — VERDON TRUE FULL-WIDTH INTRO
+========================================================== */
+
+@media (max-width: 620px) {
+
+  /* Το ολόκληρο Verdon intro βγαίνει από το 16px section gutter */
+  .verdon-intro {
+    width: calc(100% + 32px);
+    max-width: none;
+    margin-left: -16px;
+    margin-right: -16px;
+    box-sizing: border-box;
+  }
+
+  /* Το text panel καλύπτει πραγματικά όλο το πλάτος */
+  .verdon-copy {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    box-sizing: border-box;
+    background: var(--paper-soft);
+  }
+
+  /* Κρατάμε το padding μόνο ΜΕΣΑ στο κείμενο */
+  .verdon-copy {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  /* Επειδή το parent έγινε ήδη full-width,
+     ακυρώνουμε το παλιό δεύτερο bleed στο mobile artwork */
+  .verdon-mobile {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+/* ==========================================================
+   MOBILE — ÉLAN TRUE FULL-WIDTH INTRO
+========================================================== */
+
+@media (max-width: 620px) {
+
+  /* Βγάζουμε όλο το 02 intro έξω από το 16px section gutter */
+  .project--elan .project__intro--elan {
+    width: calc(100% + 32px);
+    max-width: none;
+    margin-left: -16px;
+    margin-right: -16px;
+    box-sizing: border-box;
+  }
+
+  /* Το ανοιχτό text panel φτάνει από άκρη σε άκρη */
+  .project--elan .project__intro--elan .project__copy {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    box-sizing: border-box;
+
+    padding-left: 24px;
+    padding-right: 24px;
+
+    background: var(--paper-soft);
+  }
+
+  /* Το artwork είναι ήδη μέσα σε full-width parent,
+     άρα ακυρώνουμε το παλιό δεύτερο bleed */
+  .project--elan .project__intro--elan .project__visual--elan {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .lioniq-output-sequence .lioniq-output-media {
+    padding: 0;
+    background: transparent;
+  }
+}
+
+/* ÉLAN mobile project separator */
+.elan-mobile-topline {
+  display: none;
+}
+
+@media (max-width: 620px) {
+
+  /* Κρύβουμε το παλιό 02 μέσα στο text panel */
+  .project--elan .project__copy > .project__topline {
+    display: none;
+  }
+
+  /* Νέα λευκή λωρίδα ανάμεσα σε LionIQ και ÉLAN */
+  .elan-mobile-topline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    margin-right: -16px;
+
+    box-sizing: border-box;
+    padding: 24px 24px;
+
+    background: var(--paper-soft);
+
+    font-family: "DM Mono", monospace;
+    font-size: 11px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+
+    color: var(--muted-text);
+  }
+}
+
+
+
+@media (max-width: 620px) {
+  .lioniq-output-sequence .lioniq-output-media {
+    order: 1;
+  }
+
+  .lioniq-output-sequence figcaption {
+    order: 2;
   }
 }
